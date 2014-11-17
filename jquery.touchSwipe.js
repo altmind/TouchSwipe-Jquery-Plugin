@@ -1237,7 +1237,7 @@
 		* @inner
 		*/
 		function validateDefaultEvent(jqEvent, direction) {
-			if (options.allowPageScroll === NONE || hasPinches()) {
+			/*if (options.allowPageScroll === NONE || hasPinches()) {
 				jqEvent.preventDefault();
 			} else {
 				var auto = options.allowPageScroll === AUTO;
@@ -1267,7 +1267,7 @@
 						}
 						break;
 				}
-			}
+			}*/
 
 		}
 
