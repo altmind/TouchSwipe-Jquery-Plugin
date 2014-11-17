@@ -557,11 +557,7 @@
 				// get the total number of fingers touching the screen
 				fingerCount = event.touches.length;
 			}
-			//Else this is the desktop, so stop the browser from dragging the image
-			else {
-				jqEvent.preventDefault(); //call this on jq event so we are cross browser
-			}
-
+			
 			//clear vars..
 			distance = 0;
 			direction = null;
@@ -776,8 +772,6 @@
 			    phase = PHASE_CANCEL;
                 triggerHandler(event, phase);
 			} else if (options.triggerOnTouchEnd || (options.triggerOnTouchEnd == false && phase === PHASE_MOVE)) {
-				//call this on jq event so we are cross browser 
-				jqEvent.preventDefault(); 
 				phase = PHASE_END;
                 triggerHandler(event, phase);
 			}
